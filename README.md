@@ -126,3 +126,10 @@ Backend cần cho phép CORS từ origin của Frontend.
 
 - Frontend: https://ten-ung-dung.onrender.com
 - Backend API: https://ten-backend.onrender.com
+
+## Demo trực tuyến
+
+- Frontend: https://two35991-tranhoainam.onrender.com
+- Backend API: https://two35991-tranhoainam-backend.onrender.com
+- Health check: https://two35991-tranhoainam-backend.onrender.com/health
+- Danh sách món ăn: https://two35991-tranhoainam-backend.onrender.com/api/foods
