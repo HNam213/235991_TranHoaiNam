@@ -77,3 +77,47 @@ docker rm food-backend
 ### Lưu ý bảo mật
 
 File `.env` chứa thông tin cấu hình riêng tư, không được đưa vào Docker image hoặc commit lên GitHub.
+
+
+
+## Câu 6. Đóng gói Frontend bằng Docker
+
+### Docker Image
+
+- Image: `hoainam213/235991-tranhoainam-frontend:1.0`
+- Docker Hub: https://hub.docker.com/r/hoainam213/235991-tranhoainam-frontend
+
+### Build image
+
+Chạy tại thư mục gốc dự án:
+
+```bash
+docker build \
+  --build-arg VITE_API_BASE_URL=http://localhost:5000/api \
+  -t hoainam213/235991-tranhoainam-frontend:1.0 \
+  ./frontend
+```
+
+### Chạy Frontend
+
+```bash
+docker run -d \
+  --name food-frontend \
+  -p 8080:80 \
+  hoainam213/235991-tranhoainam-frontend:1.0
+```
+
+Truy cập giao diện tại http://localhost:8080/.
+
+### Kiểm tra container
+
+```bash
+docker ps
+docker logs food-frontend
+```
+
+### Lưu ý cấu hình API
+
+`VITE_API_BASE_URL` được sử dụng trong lúc build Frontend. Khi triển khai trên máy chủ khác, hãy thay `http://localhost:5000/api` bằng URL Backend mà trình duyệt có thể truy cập được.
+
+Backend cần cho phép CORS từ origin của Frontend.
