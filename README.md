@@ -135,3 +135,19 @@ Backend cần cho phép CORS từ origin của Frontend.
 - Backend API: https://two35991-tranhoainam-backend.onrender.com
 - Health check: https://two35991-tranhoainam-backend.onrender.com/health
 - Danh sách món ăn: https://two35991-tranhoainam-backend.onrender.com/api/foods
+
+
+
+
+## Hoàn thiện bảng thông tin nộp bài
+- Bạn có thể đưa bảng sau vào báo cáo hoặc tài liệu nộp bài. Các thông tin hiện có đã được điền; những mục cần xác minh được đánh dấu rõ ràng.
+- Hạng mục	Thông tin
+- Họ tên	Trần Hoài Nam
+- Mã sinh viên	235991
+- GitHub repository	235991_TranHoaiNam
+- Frontend Render	two35991-tranhoainam.onrender.com
+- Backend Render	two35991-tranhoainam-backend.onrender.com
+- Health check	Mở /health
+- API món ăn	Mở /api/foods
+- Backend Docker Hub	hoainam213/235991-tranhoainam-backend:1.0 — cần xác nhận tag
+- Frontend Docker Hub	hoainam213/235991-tranhoainam-frontend:1.0 — cần xác nhận tag
