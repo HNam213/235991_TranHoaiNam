@@ -121,3 +121,8 @@ docker logs food-frontend
 `VITE_API_BASE_URL` được sử dụng trong lúc build Frontend. Khi triển khai trên máy chủ khác, hãy thay `http://localhost:5000/api` bằng URL Backend mà trình duyệt có thể truy cập được.
 
 Backend cần cho phép CORS từ origin của Frontend.
+
+## Demo trực tuyến
+
+- Frontend: https://ten-ung-dung.onrender.com
+- Backend API: https://ten-backend.onrender.com
